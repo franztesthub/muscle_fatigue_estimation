@@ -1,0 +1,45 @@
+<!--
+Author: Franz Chuquirachi
+Program: index.html
+Date Created: November 28, 2024
+Copyright (c) 2024, Franz Arthur Chuquirachi Rosales. All rights reserved.
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Data Collection Viewer</title>
+                <link rel="stylesheet" href="styles.css">
+				<script>
+					window.markmap = {
+						autoLoader: { manual: true },
+					};
+				</script>
+				<script src="https://cdn.jsdelivr.net/npm/markmap-autoloader@latest"></script>
+    </head>
+    <body>
+        <h1>Data Collection Viewer</h1>
+        <p>Select the starting node type to generate and view the Markdown file:</p>
+        <select id="startNodeType">
+            <option value="user">User</option>
+            <option value="activity">Activity</option>
+        </select>
+        <button id="generateBtn">Generate and Render</button>
+		<div class="container">
+			<div class = "markdown">
+				<h2>Generated Markdown File</h2>
+				<pre class="card" id="markdownOutput"></pre>
+			</div>
+			<div class = "mindmap">
+				<h2>Generated Mindmap</h2>
+				<div class="card" id="markmapCanvas">
+					<div class="markmap">
+                    </div>
+				</div>
+			</div>
+		</div>
+		<script src="app.js"></script>
+    </body>
+</html>
+

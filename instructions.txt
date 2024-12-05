@@ -1,0 +1,38 @@
+1. Install node modules.
+npm install
+2. Run in terminal to open the visualization tool:
+npm run server
+
+------------------------------------------------------------------------
+
+Additional notes:
+
+Node.js installation for your pc.
+1. Open the terminal
+2. Install nvm in the computer, to install node&npm
+   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.0/install.sh | bash
+3. Install node&npm
+   nvm install 21
+4. Verify npm
+   npm -v (additionally: node -v)
+
+Local installation of Node.js (Different form pc node version).
+1. Once you have node installed in your pc, go to you project directory
+   cd your-folder
+2. Initialize a Node.js configuration file. After finalizing you will see package.json created
+   npm init -y
+3. Install node.js as an npm package. The node version will be added to the "dependencies" key in the .json
+   npm install node@your.desired.version --save-exact (e.g. 22.11.0)
+   [ REF: https://nodejs.org/en/download/package-manager ]
+4. Add to the "scripts" key the node instructions that you want to run using the local node. These instructions E.g.:
+   "scripts": {
+     "v": "node -v"
+   },
+5. Install other required node packages using npm command from your project folder. E.g.:
+   npm install express
+   npm install --save-dev nodemon
+6. Make sure that the instruction `node visualization-tool.js` is added to the "scripts" key:
+   "scripts": {
+    "v": "node -v",
+    "server": "node visualization-tool.js"
+   },

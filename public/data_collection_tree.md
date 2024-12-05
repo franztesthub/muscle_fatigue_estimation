@@ -1,0 +1,28 @@
+# Data Collection
+## Dynamic_endurance_bicep_curls_standing
+  - user
+    - 01
+      - 01
+        - body_composition
+        - emg
+        - skeleton
+      - 02
+        - body_composition
+        - emg
+        - skeleton
+## Max_endurance_elbow_flexion_standing
+  - user
+    - 01
+      - 01
+        - body_composition
+        - emg
+        - skeleton
+      - 02
+        - body_composition
+        - emg
+        - skeleton
+    - 02
+      - 01
+        - body_composition
+        - emg
+        - skeleton

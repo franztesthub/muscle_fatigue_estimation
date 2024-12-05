@@ -1,0 +1,73 @@
+/*!
+ * Author: Franz Chuquirachi
+ * Program: styles.css
+ * Date Created: November 28, 2024
+ * Copyright (c) 2024, Franz Arthur Chuquirachi Rosales. All rights reserved.
+ */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    line-height: 1.5;
+}
+h1 {
+    font-size: 24px;
+}
+h2 {
+	margin-top: 20px;
+	font-size: 22px;
+}
+button {
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0056b3;
+}
+select {
+    padding: 5px;
+    margin-right: 10px;
+}
+/* Container for both divs */
+.container {
+	display: flex; /* Use flexbox layout */
+	justify-content: space-between; /* Distribute space evenly */
+	align-items: flex-start; /* Align items at the top */
+	gap: 20px; /* Add spacing between divs */
+	flex-wrap: wrap; /* Allow items to wrap onto a new line */
+}
+
+/* Style for individual divs */
+.markdown, .mindmap {
+	flex: 1; /* Allow divs to share available space equally */
+/*	min-width: 300px; /* Ensure divs have a minimum width */
+}
+.card {
+	background: #f4f4f4;
+	padding: 10px;
+	margin-top : 1em;
+	margin-bottom : 0;
+	border-radius: 5px;
+	/*    overflow-x: auto;*/
+	font-size: 10px;
+}
+.markmap > svg {
+	width: 100%;
+}
+
+/* Media query for narrow screens */
+@media (max-width: 768px) {
+	.container {
+		flex-direction: column; /* Stack divs vertically */
+		gap: 0px; /* Reduce gap for vertical layout */
+	}
+	.container > div {
+		width: 100%; /* Ensure each child div takes up full width */
+	}
+}

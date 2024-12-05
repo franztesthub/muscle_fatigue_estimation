@@ -1,0 +1,8 @@
+{
+    "user": ["user"],
+    "activity": [
+        "dynamic_endurance_bicep_curls_standing",
+        "max_endurance_elbow_flexion_standing"
+    ],
+    "data_type": ["emg", "skeleton", "body_composition"]
+}
