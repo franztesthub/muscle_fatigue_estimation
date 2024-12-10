@@ -1,7 +1,8 @@
 {
   "dependencies": {
     "express": "^4.21.1",
-    "node": "22.11.0"
+    "node": "22.11.0",
+    "open": "^10.1.0"
   },
   "scripts": {
     "v": "node -v",
